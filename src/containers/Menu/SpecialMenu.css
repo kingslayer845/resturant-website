@@ -1,0 +1,139 @@
+.app__specialMenu {
+  flex-direction: column;
+  background: var(--color-black);
+}
+
+.app__specialMenu-heading h1 {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #dcca87;
+  margin-bottom: 3rem;
+}
+
+.app__specialMenu-heading h3 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+/* ///////////////////// */
+
+.app__specialMenu-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+.app__specialMenu-content_cocktail,
+.app__specialMenu-content_wine {
+  flex-direction: column;
+  justify-content: start;
+}
+.app__specialMenu-content_wine h3,
+.app__specialMenu-content_cocktail h3 {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.menu {
+  list-style: none;
+  width: 100%;
+}
+
+.drink__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.drink__heading h4 {
+  font-family: var(--font-base);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #dcca87;
+}
+.drink__heading div {
+  flex: 1;
+  width: 90px;
+  height: 1px;
+  background: var(--color-golden);
+}
+.drink__heading p {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+  /* FFFFFF */
+
+  color: #ffffff;
+}
+.drink__tags {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #aaaaaa;
+  margin: 1rem 0 2rem;
+}
+.app__specialMenu-content_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__specialMenu-content_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.app__specialMenu-content_cocktail,
+.app__specialMenu-content_image,
+.app__specialMenu-content_wine {
+  flex: 1;
+}
+
+@media screen and (max-width: 1338px) {
+  .app__specialMenu-content_image img {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .app__specialMenu-content_image {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .app__specialMenu-content {
+    flex-direction: column;
+  }
+}
